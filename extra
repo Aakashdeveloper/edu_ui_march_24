@@ -4,6 +4,7 @@ https://nodejs.org/en > Install
 https://github.com/ > Signup
 https://github.com/Aakashdeveloper > follow
 
+
 //vs code extension
 live server
 vscode-icons
@@ -51,3 +52,52 @@ Map
 Footer
 Socail Links
 
+//////////
+inline
+styletg
+stylesheet
+
+inline > styletg > stylesheet
+
+
+///inline
+{
+    height:400px;
+    background:green
+}
+
+//styletag
+{
+    width:300px;
+    background:orange;
+    font-size:30px
+}
+
+//stylesheet
+{
+    height:400px;
+    font-size:40px;
+    border:1px solid;
+    background:black
+}
+
+//case1
+{
+    height:400px;
+    background:green;
+    width:300px;
+    font-size:30px;
+    border:1px solid;
+}
+
+///////
+id
+> #
+> When we want to target something unique
+
+class
+> .
+> When we want to target multiple element with same property
+
+tagname
+> When you want to target by tag
