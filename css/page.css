@@ -1,0 +1,59 @@
+h1{
+    text-align: center;
+}
+#subheading{
+    text-align: center;
+    color: purple;
+}
+
+.main{
+    display: inline-block;
+}
+
+.card{
+    height:400px;
+    background-color: #d6e7f2;
+    width:20%;
+    float:left;
+    margin-left: 2%;
+    overflow: scroll;
+}
+.brown{
+    background-color: #d8b48c;;
+}
+
+#gray{
+    background-color: #908d90;
+}
+.blue{
+    background-color: #6999b0;
+}
+
+
+.card > img{
+    width:100%;
+    height:200px
+}
+
+
+.vcard{
+    height:250px;
+    width:70%;
+    margin-left: 15%;
+    display: flex;
+    border: 5px solid gray;
+}
+
+.left{
+    height: 100%;
+    width:100%
+}
+
+.left > img{
+    height: 100%;
+    width:100%
+}
+
+.right{
+    margin-left: 2%;
+}
