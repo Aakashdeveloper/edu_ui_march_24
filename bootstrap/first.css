@@ -1,0 +1,46 @@
+#first{
+    height: 200px;
+    background-color: rgb(214, 184, 241);
+}
+#second{
+    height: 200px;
+    background-color: rgb(241, 209, 184);
+}
+#third{
+    height: 200px;
+    background-color: rgb(220, 241, 184);
+}
+#fourth{
+    height: 200px;
+    background-color: rgb(184, 241, 225);
+}
+#fifth{
+    height: 200px;
+    background-color: rgb(192, 184, 241);
+}
+#sixth{
+    height: 200px;
+    background-color: rgb(241, 184, 217);
+}
+#seventh{
+    height: 200px;
+    background-color: rgb(241, 236, 184);
+}
+.btn-purple{
+    background-color: blueviolet;
+}
+
+.edit{
+    color:green;
+    font-size: 20px;
+}
+
+.trash{
+    color:red;
+    font-size: 20px;
+}
+
+.sliderImage{
+    width:100%;
+    height: 350px !important;
+}
