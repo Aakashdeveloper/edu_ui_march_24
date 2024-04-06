@@ -1,0 +1,53 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <button onclick="geoLocation()">Get Location</button>
+        <p id="out"></p>
+        <p id="cityName"></p>
+        <script>
+            let x = document.getElementById('out');
+            let y = document.getElementById('cityName');
+
+            const geoLocation = () => {
+                if(navigator.geolocation){
+                    navigator.geolocation.getCurrentPosition(showPosition)
+                }else{
+                    x.innerText = "Geo Not Supported"
+                }
+            }
+
+            const showPosition = async (data) => {
+                // console.log(data)
+                let lat = data.coords.latitude;
+                let long =  data.coords.longitude;
+                x.innerText = `Latitude is ${lat} and long is ${long}`
+                const url=`https://api.openweathermap.org/data/2.5/forecast/daily?lat=${lat}&lon=${long}&mode=json&units=metric&cnt=5&appid=fbf712a5a83d7305c3cda4ca8fe7ef29`;
+               
+                let res = await fetch(url)
+                let output = await res.json()
+                console.log(output)
+                y.innerText=`Your City is ${output.city.name} and weather is ${output.list[0].temp.day}`
+
+            }
+        </script>
+    </body>
+</html>
+
+<!--
+const showPosition = (data) => {
+    // console.log(data)
+    let lat = data.coords.latitude;
+    let long =  data.coords.longitude;
+    x.innerText = `Latitude is ${lat} and long is ${long}`
+    const url=`https://api.openweathermap.org/data/2.5/forecast/daily?lat=${lat}&lon=${long}&mode=json&units=metric&cnt=5&appid=fbf712a5a83d7305c3cda4ca8fe7ef29`;
+    fetch(url)
+    .then((res) =>  res.json())
+    .then((data) => {
+        console.log(data)
+        y.innerText=`Your City is ${data.city.name} and weather is ${data.list[0].temp.day}`
+    })
+
+}
+-->
